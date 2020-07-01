@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/opstudentbackground"
+    tools:context=".student_support">
+    <ImageButton
+        android:id="@+id/otago_logo_img"
+        android:layout_width="wrap_content"
+        android:layout_height="205dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/oplogo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tooltipText="click to go back"
+        android:onClick="opLogo"/>
+
+    <TextView
+        android:id="@+id/student_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/otago_logo_img"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Student Success"/>
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/student_success" />
+
+</android.support.constraint.ConstraintLayout>

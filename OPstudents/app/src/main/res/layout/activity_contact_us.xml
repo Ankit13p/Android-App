@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact_us"
+    >
+
+    <ImageButton
+        android:id="@+id/otago_logo_img"
+        android:layout_width="wrap_content"
+        android:layout_height="205dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="opLogo"
+        android:src="@drawable/oplogo"
+        android:tooltipText="click to go back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/know_about_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_dark"
+        android:text="Contact Otago Polytechnic, New Zealand"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@id/otago_logo_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Customer service  hours"
+        android:textSize="10sp"
+        android:paddingStart="10dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/know_about_title_txt" />
+    <TextView
+        android:id="@+id/time_v_text"
+        android:layout_width="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toRightOf="@id/time_text"
+        app:layout_constraintTop_toBottomOf="@id/know_about_title_txt"
+        android:textSize="10sp"
+        android:text="Monday - Friday 9.00am -5.00pm"
+        />
+    <TextView
+        android:id="@+id/telephone_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/time_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="10sp"
+        android:text="Telephone (New Zealand free call)"
+         />
+    <TextView
+        android:id="@+id/telephone_v_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toRightOf="@id/time_text"
+        app:layout_constraintTop_toBottomOf="@id/time_v_text"
+        android:textSize="10sp"
+        android:text="0800 762 786"
+        />
+    <TextView
+        android:id="@+id/rom_telephone_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/telephone_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="10sp"
+        android:text="Telephone (Call from ouside New Zealand"
+        />
+    <TextView
+        android:id="@+id/rom_telephone_v_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toRightOf="@id/telephone_text"
+        app:layout_constraintTop_toBottomOf="@id/telephone_v_text"
+        android:textSize="10sp"
+        android:text="+64 3 477 3014"
+        />
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/rom_telephone_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="10sp"
+        android:text="Email"
+        />
+    <TextView
+        android:id="@+id/email_v_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toRightOf="@id/rom_telephone_text"
+        app:layout_constraintTop_toBottomOf="@id/rom_telephone_v_text"
+        android:textSize="10sp"
+        android:text="info@op.ac.nz"
+        />
+
+    <TextView
+        android:id="@+id/our_campus_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_dark"
+        android:text="Our Campuses"
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        android:textStyle="bold|italic"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@id/email_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/our_campus_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:paddingStart="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/our_campus_text"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:text="Our campuses are required to be closed for public holidays, and Schools will be closed for semester break."
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/opcampus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>
